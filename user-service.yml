@@ -1,0 +1,50 @@
+#server:
+#  port: 8088
+#
+#spring:
+#  application:
+#    name: user-service
+#
+#  datasource:
+#    url: jdbc:postgresql://localhost:5432/Testing2
+#    username: postgres
+#    password: Scrumsys
+#    driver-class-name: org.postgresql.Driver
+#    hikari:
+#      maximum-pool-size: 10
+#      minimum-idle: 5
+#
+#  jpa:
+#    hibernate:
+#      ddl-auto: validate
+#    properties:
+#      hibernate:
+#        dialect: org.hibernate.dialect.PostgreSQLDialect
+#        format_sql: true
+#    show-sql: true
+#
+#auth:
+#  service:
+#    url: http://localhost:8087   # auth-service URL
+#
+#eureka:
+#  client:
+#    register-with-eureka: false
+#    fetch-registry: false
+#
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include: "*"
+#  endpoint:
+#    health:
+#      show-details: always
+#
+#logging:
+#  level:
+#    com.scrumsys.userservice: DEBUG
+#    com.scrumsys.userservice.client: DEBUG
+#    com.scrumsys.userservice.config: DEBUG
+#    org.springframework.web: DEBUG
+#    feign: DEBUG
